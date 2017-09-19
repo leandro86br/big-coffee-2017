@@ -12,7 +12,6 @@ section{padding:80px 0 60px 0}
     section{padding: 30px 0}
 }
 
-.wireframe{}
 /* =Bootstrap Reset */
 
 .btn{border-radius: 50px!important; padding:14px 50px 17px 50px}
@@ -74,6 +73,11 @@ a.twitter{color: #00aced}
 .show{visibility: visible}
 
 .absolute{position: absolute}
+
+@media (max-width:576px){
+    .d-xs-none{display: none}
+}
+
 
 
 /* =Headings */
