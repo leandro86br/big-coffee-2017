@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="bg-white">
+<body>
 
 <a href="#">
 <div class="btn-toggle-nav">
@@ -48,7 +48,7 @@
 
     <div class="col-lg-8">
         <nav>
-            <ul>
+            <ul id="nav-mobile">
             <li><a href="produtos.html">PRODUTOS</a></li>
             <li><a href="http://www.icafebrick.com" target="_blank">LOJA VIRTUAL <i class="fa fa-external-link"></i></a></li>
             <li><a href="sobre-nos.html">SOBRE N&Oacute;S</a></li>
@@ -73,64 +73,37 @@
 <div class="container">
 <div class="row">
 
-    <div class="col-lg-4">
-        <div class="card">
-            <div class="card-body">
-                <h3><span class="fa fa-map-marker"></span> Localiza&ccedil;&atilde;o</h3>
-                <br>
+    <div class="col-md-4">
 
-                <div class="adr">
-                    <p class="info locality">
-                    S&atilde;o Paulo -
-                    <abbr title="S&atilde;o Paulo" class="region">SP</abbr><br>
-                    Rua Santa Teresa 64 <br>
-                    Centro <br>
-                    CEP 01016-020
-                    </p>
-                </div><!-- ADR -->
-            </div>
-        </div>
+        <h3>Localiza&ccedil;&atilde;o</h3>
+        <br>
+
+        <div class="adr">
+            <p class="info locality">
+            S&atilde;o Paulo -
+            <abbr title="S&atilde;o Paulo" class="region">SP</abbr><br>
+            Rua Santa Teresa, 64 <br>
+            Centro <br>
+            CEP 01016-020
+            </p>
+        </div><!-- ADR -->
+
+        <br>
+
+        <h3>Atendimento</h3>
+        <br>
+
+        <p class="info email">atendimento<span class="normal">@</span>bigcoffee.com.br</p>
+
+        <p class="info tel">
+        <small>11</small> 4102-7306 <br>
+        <small>11</small> 98224-0929 <br>
+        </p>
+
     </div>
 
-    <div class="col-lg-4">
-        <div class="card">
-            <div class="card-body">
-                <h3><span class="fa fa-phone-square"></span> Atendimento</h3>
-                <br>
-
-                <p class="info email">atendimento<span class="normal">@</span>bigcoffee.com.br</p>
-
-                <p class="info tel">
-                <small>11</small> 4102-7306 <br>
-                <small>11</small> 98224-0929 <br>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4">
-        <div class="card no-border">
-            <div class="card-body">
-                <h3> <span class="fa fa-user-circle-o"></span> Redes Sociais</h3>
-                <br>
-
-                <p>
-                <a rel="me nofollow" class="facebook" target="_blank" href="https://www.facebook.com/i.cafebrick"><span class="fa fa-facebook-square fa-2x"></span> Facebook</a><br>
-
-                <a rel="me nofollow" class="twitter" target="_blank" href="https://twitter.com/"><span class="fa fa-twitter-square fa-2x"></span> Twitter</a><br>
-
-                <a rel="me nofollow" class="google" target="_blank" href="https://twitter.com/"><span class="fa fa-google-plus-square fa-2x"></span> Google +</a>
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<div class="row">
-
-    <div class="col-xl-12">
-        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d58509.789266936656!2d-46.63190879779135!3d-23.573405427178646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-23.550519899999998!2d-46.633309399999995!5e0!3m2!1spt-BR!2sbr!4v1503688070214"></iframe>
+    <div class="col-md-8">
+        <iframe class="maps rounded" src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d58509.789266936656!2d-46.63190879779135!3d-23.573405427178646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-23.550519899999998!2d-46.633309399999995!5e0!3m2!1spt-BR!2sbr!4v1503688070214"></iframe>
     </div>
 </div>
 
@@ -163,7 +136,7 @@
                 </p>
             </div>
             <div class="col-md-1">
-                <a href="#top" class="back-top text-center">
+                <a href="#top" class="back-top hide-me text-center">
                     <i class="fa fa-angle-double-up fa-2x"></i>
                 </a>
             </div>
@@ -171,7 +144,7 @@
     </div>
 </footer>
 
-<script src="js/nav.js" async></script>
+<script src="js/functions.js" async></script>
 <script src="https://use.fontawesome.com/8ffc91859c.js" async></script>
 
 </body>
