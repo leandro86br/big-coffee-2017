@@ -24,12 +24,11 @@ navMobile();
 function backTopButton() {
     
     var
-        $back_top = document.getElementsByClassName('back-top')[0],
-        i;
+        $back_top = document.getElementsByClassName('back-top')[0];
     
     window.onscroll = function scrollFunction() {
         
-        if (document.documentElement.scrollTop > 100) {
+        if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
             $back_top.classList.remove('hide-me');
         } else {
             $back_top.classList.add('hide-me');
