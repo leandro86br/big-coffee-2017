@@ -1,3 +1,7 @@
+/*
+    Author: Leandro.Zambelli@yahoo.com
+*/
+
 function navMobile() {
     
     var
