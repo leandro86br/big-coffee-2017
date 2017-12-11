@@ -98,15 +98,11 @@ a:hover{color: #c8bda7}
     padding:10px 15px;
     background:#796A4B;
     color:#fff;
-    border-radius:100px; 
+    border-radius:100px;
     transition: ease 0.2s
 }
 .back-top:hover, .back-top:focus, .back-top:active{color:#fff}
 .back-top:hover{transition:all ease-in-out 0.1s; background:#64583f}
-
-@media (max-width:576px){
-    .d-xs-none{display: none}
-}
 
 
 /* =Typography */
@@ -144,7 +140,7 @@ nav a:active{color: #aaa}
     nav ul{max-height: 0; overflow: hidden; transition: linear 0.2s}
     nav li{display: block; text-align: left; border-bottom: 1px dashed #222}
     nav a{ display: block; padding: 10px;}
-    
+
     ul.nav-index li{background: #000; border-bottom: 1px dashed #222}
 
     .btn-toggle-nav {
@@ -156,9 +152,9 @@ nav a:active{color: #aaa}
         border-bottom-right-radius: 100px;
         z-index: 1
     }
-    
+
     .bar{display: block; margin:3px 0; width: 24px; height: 3px; background:#000; transition: linear 0.2s}
-    
+
     .bar-close .bar:nth-child(1) {-webkit-transform:rotate(45deg) translate(5px,4px); transform: rotate(45deg) translate(5px,4px)}
     .bar-close .bar:nth-child(2) {visibility: hidden; opacity: 0}
     .bar-close .bar:nth-child(3) {-webkit-transform:rotate(-45deg) translate(4px,-4px); transform: rotate(-45deg) translate(4px,-4px)}
