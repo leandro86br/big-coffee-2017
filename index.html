@@ -7,13 +7,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:600|Quicksand">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link rel="stylesheet" href="css/custom.css">
 
 <link rel="icon" type="image/png" href="img/favicon.png">
 
 <title>Big Coffee | Caf&eacute; Espresso</title>
+
+<script type="application/ld+json">
+{
+"@context" : "http://schema.org",
+"@type" : "Organization",
+"name":"Big Coffee",
+"url":"http://bigcoffee.com.br",
+"logo": "http://bigcoffee.com.br/img/logo-black.png",
+"email":"big.expresso@gmail.com.br",
+"telephone" : [ "(11) 4102-7306 ", "(11) 98224-0929" ],
+"address" : {
+    "@type": "PostalAddress",
+    "streetAddress": "rua ",
+    "addressLocality": "S&atilde;o Paulo",
+    "addressRegion": "S&atilde;o Paulo",
+    "postalCode": "cep"
+    }
+}
+</script>
+
 
 </head>
 
@@ -40,7 +58,7 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-12 text-right">
-                  <h5 class="font-dosis"><a href="tel:11-4102-7306"><small>11</small> 4102-7306 </a>
+                  <h5 class="font-dosis"><a href="tel:11-4102-7306"><small>11</small> 4102-7306 </a> &nbsp; &nbsp;
                   <a href="tel:11-98224-0929"><small>11</small> 98224-0929 </a></h5>
               </div><!-- col -->
           </div><!-- row -->
@@ -55,11 +73,11 @@
   <div class="container">
   <div class="row">
 
-      <div class="col-lg-4 at-center">
-          <div class="logo">
-              <img src="img/logo-white.png" class="img-fluid" width="220" alt="">
-          </div><!-- logo -->
-      </div><!-- col -->
+    <div class="col-lg-4 text-center text-lg-left">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo-white.png" class="img-fluid" width="220" alt=""></a>
+        </div><!-- logo -->
+    </div><!-- col -->
 
       <div class="col-lg-8">
           <nav>
@@ -80,7 +98,7 @@
   <!-- CONTENT
   ************************* -->
 
-  <section>
+  <section class="centralized-text">
     <div class="container">
       <div class="row justify-content-center text-center">
           <div class="col-lg-6 animated fadeInUp">
@@ -100,8 +118,8 @@
 
 </div><!-- overlay -->
 
-<script src="js/functions.js" async></script>
-<script src="https://use.fontawesome.com/8ffc91859c.js" async></script>
+<script src="js/functions.js" defer></script>
+<script src="https://use.fontawesome.com/8ffc91859c.js" defer></script>
 
 </body>
 </html>

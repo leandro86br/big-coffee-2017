@@ -1,26 +1,20 @@
 /*
     Author: Leandro.Zambelli@yahoo.com
     2017
-    v01.02.2018
+    v01.10.2018
 */
 
+
+@import url(https://fonts.googleapis.com/css?family=Dosis:600|Quicksand:400);
 
 html,body{height: 100%}
 body{background: #181818 url(../img/bg/diagmonds.png); overflow-x: hidden}
 
-section{padding:180px 0}
-
-@media (max-width:991px){
-    section{padding: 30px 0}
-}
-
 hr{border-style:dashed; border-color: #333}
 
-a{color: #a99775}
-a:hover{color: #c8bda7}
 
-
-/* =Bootstrap Reset */
+/* =Bootstrap Reset
+*/
 
 .btn{border-radius: 50px; padding:14px 50px 17px 50px}
 .btn-dark{background-color: #111; border-color: #111}
@@ -34,7 +28,8 @@ a:hover{color: #c8bda7}
 [class*="btn-outline"]{border:2px solid}
 
 
-/*= BaguetteBox Reset */
+/*= BaguetteBox Reset
+*/
 
 .gallery a:focus{outline: none}
 
@@ -48,12 +43,49 @@ a:hover{color: #c8bda7}
 .baguetteBox-button:focus, .baguetteBox-button:hover {background-color: #111; outline: none}
 
 
-/* =Classes */
+/* =ANIMATION
+*/
+
+.animated { animation-duration: 1s; animation-fill-mode: both; }
+.fadeIn { animation-name: fadeIn; }
+.bounceInLeft { animation-name: bounceInLeft; }
+.bounceInRight { animation-name: bounceInRight; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to { animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+
+  0% { opacity: 0; transform: translate3d(-3000px, 0, 0); }
+  60% { opacity: 1; transform: translate3d(25px, 0, 0); }
+  75% { transform: translate3d(-10px, 0, 0); }
+  90% { transform: translate3d(5px, 0, 0); }
+
+  to { transform: none; }
+}
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to { animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+
+  from { opacity: 0; transform: translate3d(3000px, 0, 0); }
+
+  60% { opacity: 1; transform: translate3d(-25px, 0, 0); }
+  75% { transform: translate3d(10px, 0, 0); }
+  90% { transform: translate3d(-5px, 0, 0); }
+
+  to { transform: none; }
+}
+
+
+/* =Classes
+*/
 
 .font-dosis{font-family: "Dosis", sans-serif}
 .text-shadow{text-shadow: 0 0 10px #000}
 
-.no-border{border: 0}
 .border-sides{border-left: 1px dashed #a99775; border-right: 1px dashed #a99775}
 
 @media (max-width: 767px) {
@@ -65,24 +97,31 @@ a:hover{color: #c8bda7}
 .bg-black{background: #111}
 
 @media (max-width:991px){
-
     .bg-overlay{background: rgba(0,0,0,0.6)}
 }
 
-.space{margin: 90px 0}
+.centralized-logo { position: absolute; top:50%; margin-top: -31px} /* centraliza o logo no footer */
 
-.push-down-15{margin-top: 15px}
-.push-down-40{margin-top: 40px}
-.push-down-60{margin-top: 60px}
-.push-down-60{margin-top: 60px}
-
-@media (max-width:414px){
-    .bg-overlay{background: rgba(0,0,0,0.6)}
+/* texto verticalmente centralizado na primeira pagina */
+@media (min-width:768px){
+    .centralized-text {width: 100%; position: absolute; top: 52%; left: 50%; transform: translate(-50%, -50%); }
 }
+
+@media (max-width:767px){
+    .centralized-text { position:inherit; padding-top:80px; padding-bottom: 80px; transform: translate(0,0); }
+}
+
+@media (max-width:575px){
+    .centralized-text { position:inherit; padding-top:23px; padding-bottom: 23px; transform: translate(0,0); }
+}
+
+.padding-content{padding-top: 150px; padding-bottom: 150px}
+.space{margin-top: 100px}
 
 
 @media (max-width:991px){
-    .at-center{text-align: center}
+    .padding-content { padding-top: 66px; padding-bottom: 66px }
+    .space { margin: 44px 0; }
 }
 
 .img-fx img{transition: 0.3s ease}
@@ -91,6 +130,7 @@ a:hover{color: #c8bda7}
 .hide-me{visibility: hidden; opacity: 0}
 
 .absolute{position: absolute}
+.relative{position: relative}
 
 .back-top {
     position:fixed;
@@ -108,7 +148,7 @@ a:hover{color: #c8bda7}
 
 /* =Typography */
 
-h1,h2,h3,h4,h5{font-family: 'Quicksand', sans-serif; font-weight: 300; color: #fff}
+h1,h2,h3,h4,h5{font-family: 'Quicksand', sans-serif; color: #fff}
 
 h5{margin:2px 0 4px 0; color: #fff; font-size: 0.95em}
 
@@ -121,17 +161,21 @@ h5{margin:2px 0 4px 0; color: #fff; font-size: 0.95em}
 
 p{color: #eee}
 
+a{color: #a99775; transition: all linear .1s}
+a:hover{color: #c8bda7; }
 
-/* =Header and Nav */
+
+/* =Header and Nav
+*/
 
 header{padding: 20px 0 30px}
 
 nav{margin-top: 40px; float: right}
 nav ul{list-style: none; padding: 0}
 nav li{display: inline-block}
-nav a{font-family: 'Quicksand', sans-serif; padding:0 10px; font-weight: 800; color: #fff; font-size: 0.9em}
-nav a:hover{color: #aaa; text-decoration: none}
-nav a:active{color: #aaa}
+nav a{font-family: 'Quicksand', sans-serif; padding:0 10px; color: #fff; font-size: 0.9em}
+nav a:hover{color: #a99775; text-decoration: none}
+nav a:active{color: #a99775}
 
 @media (max-width:991px){
     nav{margin: 10px 0 0 0; float:none; text-align: center}
@@ -160,6 +204,10 @@ nav a:active{color: #aaa}
     .bar-close .bar:nth-child(2) {visibility: hidden; opacity: 0}
     .bar-close .bar:nth-child(3) {-webkit-transform:rotate(-45deg) translate(4px,-4px); transform: rotate(-45deg) translate(4px,-4px)}
 }
+
+
+/* =footer
+*/
 
 footer{margin-top: 20px; padding: 70px 0; background: #584D37; color: #fff}
 footer ul{list-style: none; margin-top: 10px; padding: 0}
