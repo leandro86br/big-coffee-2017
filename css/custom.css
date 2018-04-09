@@ -8,7 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:600|Quicksand:400);
 
 html,body{height: 100%}
-body{background: #181818 url(../img/bg/diagmonds.png); overflow-x: hidden}
+body{background: #000 url(../img/bg/bg2.jpg); background-size: cover; overflow-x: hidden}
 
 hr{border-style:dashed; border-color: #333}
 
@@ -47,37 +47,20 @@ hr{border-style:dashed; border-color: #333}
 */
 
 .animated { animation-duration: 1s; animation-fill-mode: both; }
-.fadeIn { animation-name: fadeIn; }
-.bounceInLeft { animation-name: bounceInLeft; }
-.bounceInRight { animation-name: bounceInRight; }
+.fadeInUp { animation-name: fadeInUp; }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-@keyframes bounceInLeft {
-  from, 60%, 75%, 90%, to { animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); }
-
-  0% { opacity: 0; transform: translate3d(-3000px, 0, 0); }
-  60% { opacity: 1; transform: translate3d(25px, 0, 0); }
-  75% { transform: translate3d(-10px, 0, 0); }
-  90% { transform: translate3d(5px, 0, 0); }
-
-  to { transform: none; }
-}
-
-@keyframes bounceInRight {
-  from, 60%, 75%, 90%, to { animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); }
-
-  from { opacity: 0; transform: translate3d(3000px, 0, 0); }
-
-  60% { opacity: 1; transform: translate3d(-25px, 0, 0); }
-  75% { transform: translate3d(10px, 0, 0); }
-  90% { transform: translate3d(-5px, 0, 0); }
-
-  to { transform: none; }
-}
 
 
 /* =Classes
@@ -86,7 +69,7 @@ hr{border-style:dashed; border-color: #333}
 .font-dosis{font-family: "Dosis", sans-serif}
 .text-shadow{text-shadow: 0 0 10px #000}
 
-.border-sides{border-left: 1px dashed #a99775; border-right: 1px dashed #a99775}
+.border-sides{border-left: 1px dashed rgba(255,255,255,0.2); border-right: 1px dashed rgba(255,255,255,0.2)}
 
 @media (max-width: 767px) {
     .border-sides{border: none}
@@ -94,7 +77,8 @@ hr{border-style:dashed; border-color: #333}
 
 .bg-index{margin: 0; background:url(../img/bg/bg.jpg) no-repeat; background-size: cover; background-attachment: fixed}
 .bg-overlay{background: rgba(0,0,0,0.4); min-height: 100%}
-.bg-black{background: #111}
+.bg-black-60{background: rgba(0,0,0,0.6)}
+.bg-black{background: #000}
 
 @media (max-width:991px){
     .bg-overlay{background: rgba(0,0,0,0.6)}
@@ -181,7 +165,7 @@ nav a:active{color: #a99775}
     nav{margin: 10px 0 0 0; float:none; text-align: center}
 }
 
-@media (max-width:500px){
+@media (max-width:767px){
     nav ul{max-height: 0; overflow: hidden; transition: linear 0.2s}
     nav li{display: block; text-align: left; border-bottom: 1px dashed #222}
     nav a{ display: block; padding: 10px;}
@@ -209,7 +193,7 @@ nav a:active{color: #a99775}
 /* =footer
 */
 
-footer{margin-top: 20px; padding: 70px 0; background: #584D37; color: #fff}
+footer{padding: 70px 0; background: #584D37; color: #fff}
 footer ul{list-style: none; margin-top: 10px; padding: 0}
 footer a{color: #fff; font-size: 0.85em}
 footer a:hover{color: #e0d9cd; text-decoration: none}

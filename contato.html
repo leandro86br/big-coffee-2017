@@ -15,6 +15,7 @@
 </head>
 
 <body>
+<div class="bg-overlay" id="top">
 
 <!-- NAV
 ************************* -->
@@ -46,25 +47,26 @@
 <!-- HEADER
 ************************* -->
 
-<header class="bg-black">
+<header class="bg-black-60">
 <div class="container">
 <div class="row">
 
     <div class="col-lg-4 text-center text-lg-left">
         <div class="logo">
-            <a href="index.html"><img src="img/logo-white.png" class="img-fluid" width="220" alt=""></a>
+            <a href="index.html"><img src="img/logo-white.png" class="img-fluid" width="200" alt=""></a>
         </div><!-- logo -->
     </div><!-- col -->
 
     <div class="col-lg-8">
-        <nav>
-            <ul id="nav-mobile">
-            <li><a href="produtos.html">PRODUTOS</a></li>
-            <li><a href="http://www.icafebrick.com" target="_blank">LOJA VIRTUAL <i class="fa fa-external-link"></i></a></li>
-            <li><a href="sobre-nos.html">SOBRE N&Oacute;S</a></li>
-            <li><a href="contato.html">CONTATO</a></li>
-            </ul>
-        </nav>
+          <nav>
+              <ul id="nav-mobile" class="nav-index">
+              <li><a href="produtos.html">PRODUTOS</a></li>
+              <li><a href="maquinas-cafe.html">M&Aacute;QUINAS DE CAF&Eacute;</a></li>
+              <li><a href="http://www.icafebrick.com" target="_blank">LOJA VIRTUAL <i class="fa fa-external-link"></i></a></li>
+              <li><a href="sobre-nos.html">SOBRE N&Oacute;S</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
+              </ul>
+          </nav>
     </div><!-- col -->
 
 </div><!-- row -->
@@ -76,10 +78,10 @@
 ************************* -->
 
 <section>
-<div class="container padding-content">
+<div class="container padding-content animated fadeInUp">
 <div class="row align-items-center">
 
-    <div class="col-md-6 animated bounceInLeft">
+    <div class="col-md-6">
 
         <h3>Atendimento Personalizado</h3>
         
@@ -112,13 +114,15 @@
         <br class="d-md-none">
     </div><!-- col -->
 
-    <div class="col-md-6 img-fx animated bounceInRight">
+    <div class="col-md-6 img-fx">
         <img src="img/contato.jpg" alt="" class="img-fluid rounded-circle">
     </div><!-- col -->
 
 </div><!-- row -->
 </div><!-- container -->
 </section>
+
+</div><!-- overlay -->
 
 
 <!-- FOOTER
@@ -135,10 +139,8 @@
             <div class="col-md-3 border-sides">
                 <h4 class="font-dosis">Menu</h4>
                 <ul>
-
                 <li><a href="produtos.html">PRODUTOS</a></li>
-                <li><a href="produtos-maquinas.html">M&Aacute;QUINAS DE CAF&Eacute;</a></li>
-                <li><a href="produtos-cafe.html">CAF&Eacute; E COMPLEMENTOS</a></li>
+                <li><a href="maquinas-cafe.html">M&Aacute;QUINAS DE CAF&Eacute;</a></li>
                 <li><a href="http://www.icafebrick.com" target="_blank">LOJA VIRTUAL <i class="fa fa-external-link"></i></a></li>
                 <li><a href="sobre-nos.html">SOBRE N&Oacute;S</a></li>
                 <li><a href="contato.html">CONTATO</a></li>
@@ -175,6 +177,11 @@
     </div><!-- row -->
   </div><!-- container -->
 </div><!-- footer bottom -->
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous" defer></script>
 
 <script src="js/functions.js" defer></script>
 <script src="https://use.fontawesome.com/8ffc91859c.js" defer></script>
